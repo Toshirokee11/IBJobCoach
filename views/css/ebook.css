@@ -1,0 +1,240 @@
+.ebook-banner {
+    background-image: url(../img/ebook/header_t.jpeg);
+    background-size: 100% 100%;
+    height: 450px;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 1400px) {
+    .ebook-banner {
+        height: 490px;
+    }
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.section {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-normal {
+    color: #5d5d5d;
+    font-size: 23px;
+    text-align: center;
+    padding: 20px;
+}
+
+.box-ebooks-ppal {
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.box-ebooks-iconos {
+    padding: 0px;
+    margin-top: 40px;
+    margin-left: -100px;
+}
+
+.box-ebooks {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 30px;
+}
+
+.elemento {
+    margin: -35px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icono-ebook {
+    width: 180px;
+}
+
+.box-ebooks span {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 37px;
+}
+
+.left-blockk {
+    width: 400px;
+    height: 600px;
+}
+
+.contenedor-img {
+    margin-top: 30px;
+}
+
+.button-descargar {
+    padding-left: 80px;
+    margin-top: 0px;
+}
+
+.btn-descargar {
+    background: #f9be13;
+    border-radius: 10px;
+    border: 0;
+    color: #251448;
+    font-size: 35px;
+    outline: 0;
+    transition: 0.3s ease;
+    text-decoration: none !important;
+}
+
+.btn-descargar:hover {
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.452);
+}
+
+.contenido-modal {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    width: 50%;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 40%);
+    animation-name: modal;
+    animation-duration: 1s;
+}
+
+.modal-header,
+.footer {
+    padding: 8px 16px;
+    background: #f9be13;
+    color: #212529;
+}
+
+.close {
+    color: #f2f2f2;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.modal-resp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.modal-body {
+    font-size: 12px;
+    line-height: 22px;
+    padding: 40px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+a.pago,
+a.gratutito {
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    padding: 7px;
+    width: 220px;
+    border: 1px solid #f9be13;
+    background-color: #f9be13;
+    border-radius: 10px;
+    color: #212529;
+}
+
+.footer {
+    background-color: #ececec;
+    padding: 7px 0px 0px 0px;
+}
+
+.z-10000 {
+    z-index: 100000;
+}
+
+.paypal-buttons {
+    max-width: 100% !important;
+    min-width: 100% !important;
+}
+
+.ebook-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ebook-a {
+    background-image: url(../img/ebook/banner_ebook.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 8.5em 0em;
+}
+
+@media (min-width: 1025px) {
+    .form-block {
+        background-color: rgba(11, 58, 77, 0.7);
+        border-radius: 50px;
+    }
+}
+
+.form-block {
+    background-color: rgba(11, 58, 77, 0.7);
+    box-shadow: 0px 0px 60px -20px #000000;
+    padding: 20px 0px;
+    border-radius: 60px;
+    min-height: 230px !important;
+    margin-right: 0px;
+}
+
+.text-form {
+    color: white !important;
+    font-size: 40px;
+    font-family: serif;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+input[type="email"],
+input[type="tel"],
+input[type="text"] {
+    border: none;
+    border-radius: 10px;
+    outline: 0;
+    height: 40px;
+    width: 100%;
+    margin: 0 0 18px 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: border 0.3s, -webkit-box-shadow 0.3s;
+    transition: border 0.3s, -webkit-box-shadow 0.3s;
+    transition: box-shadow 0.3s, border 0.3s;
+    transition: box-shadow 0.3s, border 0.3s, -webkit-box-shadow 0.3s;
+}
