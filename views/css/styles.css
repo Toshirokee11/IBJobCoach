@@ -1,0 +1,1348 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/************** BARRA NAVEGACION PRINCIPAL IBJOBCOACH *************/
+
+
+/*sticky header position*/
+
+.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav__principal {
+    background-color: rgba(255, 255, 255, 0.933);
+    min-height: 70px;
+}
+
+.link__navegacion {
+    font-weight: 500;
+}
+
+.boton__navegacion {
+    background-color: #e40b0b;
+}
+
+.btn__navegacion {
+    background-color: #e40b0b;
+    color: white;
+    font-weight: 400;
+}
+
+.btn__navegacion:hover {
+    color: #edf2f4;
+}
+
+
+/************** FIN BARRA NAVEGACION PRINCIPAL IBJOBCOACH **************/
+
+
+/************* BANNER INICIO IBJOBCOACH **************/
+
+#carousel .carousel-item.first {
+    background-image: url(../img/carousel/slider1.jpg);
+}
+
+#carousel .carousel-item.operator {
+    background-image: url(../img/carousel/slider2.jpg);
+}
+
+#carousel .carousel-item.analyst {
+    background-image: url(../img/carousel/slider3.jpg);
+}
+
+#carousel .carousel-item.boss {
+    background-image: url(../img/carousel/slider4.jpg);
+}
+
+#carousel .carousel-item.manager {
+    background-image: url(../img/carousel/slider5.jpg);
+}
+
+#carousel .carousel-item {
+    height: 80vh;
+    width: 100%;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+#carousel .carousel-inner .carousel-item {
+    transition: -webkit-transform 2s ease;
+    transition: transform 2s ease;
+    transition: transform 2s ease, -webkit-transform 2s ease;
+}
+
+#carousel .carousel-item .caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    color: white;
+    animation-duration: 1s;
+    animation-delay: 2s;
+}
+
+#carousel .caption h2 {
+    animation-duration: 1s;
+    animation-delay: 2s;
+    color: white;
+}
+
+#carousel .caption p {
+    animation-duration: 1s;
+    animation-delay: 2.2s;
+}
+
+#carousel .caption a {
+    animation-duration: 1s;
+    animation-delay: 2.4s;
+}
+
+
+/* Button */
+
+.delicious-btn {
+    display: inline-block;
+    min-width: 160px;
+    height: 60px;
+    color: #ffffff;
+    border: none;
+    border-left: 3px solid #9d0208;
+    border-radius: 0;
+    padding: 0 30px;
+    font-size: 16px;
+    line-height: 58px;
+    font-weight: 600;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    text-transform: capitalize;
+    background-color: #d00000;
+    border-radius: 10px;
+}
+
+.delicious-btn.active,
+.delicious-btn:hover,
+.delicious-btn:focus {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #9d0208;
+    border-color: #d00000;
+}
+
+.indicadores__principal li {
+    background-color: #d00000;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+
+/************** FIN BANNER INICIO IBJOBCOACH ************/
+
+
+/************** CSS SECTION NOSOTROS **************/
+
+.IBnosotros {
+    animation-name: fadeInUp;
+    padding: 40px 0px;
+}
+
+.linea {
+    border-top: 3px solid #094a4c;
+    height: 23px;
+    padding: 1rem;
+    margin: 20px auto 0 auto;
+}
+
+.texto-nosotros {
+    font-size: 3rem;
+    color: #094a4c;
+    font-weight: bold;
+    padding-right: 1rem;
+    text-align: end;
+}
+
+.iz{
+    text-align: start;
+    padding-left: 1rem;
+}
+
+.img__gerente {
+    text-align: center;
+}
+
+.descripcion-nosotros {
+    background-color: #f9f6f1;
+    font-size: 20px;
+}
+
+.d-text p {
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.text-justify {
+    padding-top: 5rem;
+}
+
+.icot{
+    margin-top: 3rem;
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+
+.txt-check {
+    margin: 14px 0 0 26px;
+}
+
+.form-group.check input[type=checkbox], .form-group.check input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.checkmark,.form-group.check input{
+    background-color: #eee;
+    border: 1.1px solid #ccc;
+    cursor: pointer;
+    height: 18px;
+    left: 6px;
+    position: absolute;
+    top: 18px;
+    width: 18px;
+}
+
+.form-group.check input{
+    opacity: 0;
+}
+
+.txt-check input:checked ~ .checkmark {
+    background-color: #2196f3;
+}
+
+.txt-check input:checked ~ .checkmark::after {
+    display: block;
+}
+
+.checkmark::after {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border-width: 0 3px 3px 0 !important;
+    border: solid #fff;
+    content: "";
+    display: none;
+    height: 12px;
+    left: 7px;
+    position: absolute;
+    top: 2px;
+    transform: rotate(45deg);
+    width: 5px;
+}
+
+@media (max-width: 1240px) {
+    .texto-nosotros {
+        font-size: 2rem;
+    }
+    .d-text {
+        margin-top: 0px;
+        font-size: 14px;
+    }
+    .descripcion-nosotros {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .texto-nosotros {
+        text-align: center;
+    }
+    .icot{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 750px) {
+    .d-text {
+        font-size: 13px;
+    }
+    .text-justify {
+        padding-top: 20px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+
+/************  FIN SECCION NOSOTROS ****************/
+
+
+/****  FORMULARIO "DESEAS MEJORAR COMO EMPRESA" *****/
+
+
+/**** FIN FORMULARIO "DESEAS MEJORAR COMO EMPRESA" *****/
+
+
+/************** CSS ¿QUE ES IBJOBCOACH? **************/
+
+.IBJOB {
+    padding: 30px 0;
+    visibility: visible;
+    animation-name: fadeInUp;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.contenedor {
+    background-color: #212529;
+    color: #fff;
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.subtitulo__outplacement {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.parrafo__ibjobcoach {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+@media (max-width: 800px) {
+    .titulo {
+        font-size: 30px;
+    }
+    .subtitulo__outplacement {
+        font-size: 1rem;
+    }
+    .parrafo__ibjobcoach {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .titulo {
+        font-size: 25px;
+    }
+    .parrafo__ibjobcoach {
+        font-size: 1.2rem;
+    }
+}
+
+
+/********** FIN QUE ES IBJOBCOACH? **************/
+
+
+/************** SECCION BENEFICIOS **************/
+
+.Beneficios {
+    visibility: visible;
+    animation-name: fadeInUp;
+}
+
+
+/*---- Anclas -----*/
+
+.ancla:before {
+    display: block;
+    content: " ";
+    margin-top: -120px;
+    height: 150px;
+    visibility: hidden;
+}
+
+.iconos__beneficios {
+    height: 180px;
+}
+
+.text__beneficios {
+    margin-top: 50%;
+    font-size: 108%;
+}
+
+.text__beneficios1 {
+    font-size: 108%;
+}
+
+
+/************ FIN SECCION BENEFICIOS ************/
+
+
+/**************** SECCION PRUEBA GRATUITA *************/
+
+
+/**************** FIN SECCION PRUEBA GRATUITA *************/
+
+
+/************** VISTA PRECIOS **************/
+
+.contenedor_banner_precio {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+}
+
+.caja-texto {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-texto .texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3vw;
+    font-weight: 400;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+.caja-texto .texto span {
+    color: #ca1b19;
+    font-weight: 500;
+}
+
+.caja-texto button {
+    font-size: 2vw;
+    background-color: #10484a;
+    color: #f9f6f1;
+    border: transparent;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+    .caja-texto .texto {
+        font-size: 4vw;
+    }
+    .caja-texto button {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 750px) {
+    .caja-texto .texto {
+        font-size: 5vw;
+    }
+    .caja-texto button {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 460px) {
+    .caja-texto .texto {
+        font-size: 6vw;
+    }
+    .caja-texto button {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 300px) {
+    .caja-texto .texto {
+        font-size: 7vw;
+    }
+    .caja-texto button {
+        font-size: 5vw;
+    }
+}
+
+
+/************** FORMLARIOS DE VISTA PRECIOS **************/
+
+.menu {
+    color: gray;
+    font-size: 1.4rem;
+    height: 60px;
+    background-color: #ffffffb0;
+}
+
+#nav-tab .active {
+    background-color: transparent;
+    color: black;
+}
+
+.nav button:hover {
+    border-color: #e2742a !important;
+}
+
+.form__precios {
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    border-radius: 20px;
+}
+
+.title-pagos {
+    font-size: 1.7rem;
+    color: gray;
+    margin: 20px 0px 35px 0px;
+}
+
+.title-pagos span {
+    font-weight: bold;
+}
+
+.cuadro {
+    border: 4px solid rgb(221, 7, 7);
+    border-radius: 20px;
+}
+
+.titulo-card {
+    color: rgb(221, 7, 7);
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.boton-d {
+    background-color: #fdc201bb;
+    border-color: transparent;
+    border-radius: 25px;
+    padding: 8px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #05425a;
+}
+
+.boton-dd {
+    background-color: #054e4e;
+    border-color: transparent;
+    border-radius: 25px;
+    padding: 8px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.emergente {
+    background-color: #212529;
+    align-items: center;
+}
+
+.texto-card {
+    color: #f9be13;
+    border-color: transparent;
+}
+
+.emergente .close {
+    margin: 20px 0px 10px 350px;
+}
+
+.texto-modal {
+    color: white;
+}
+
+.texto-modal span {
+    font-weight: bold;
+}
+
+.txt-licencias {
+    color: #808080;
+    font-size: 1.1rem;
+}
+
+.form-precios {
+    margin-top: -60px;
+    margin-bottom: 1.875rem;
+    position: relative;
+    z-index: 100;
+}
+
+@media (max-width: 974px) {
+    .menu {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .titulo-card {
+        font-size: 1.1rem;
+    }
+    .card-body p {
+        font-size: 0.8rem;
+    }
+    .boton-d {
+        padding: 4px 10px;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .emergente .close {
+        margin: 20px 0px 10px 220px;
+    }
+}
+
+@media (max-width: 350px) {
+    .emergente .close {
+        margin: 20px 0px 10px 190px;
+    }
+}
+
+.boton-siguiente {
+    height: 55px;
+    width: 130px;
+    border-radius: 15px;
+    background-color: #054e4e;
+    border-color: transparent;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 450px) {
+    .columna-datos {
+        width: 300px;
+    }
+}
+
+@media (max-width: 350px) {
+    .columna-datos {
+        width: 210px;
+    }
+}
+
+.btn-paypal,
+.btn-transferencia {
+    border-radius: 15px;
+    background-color: transparent;
+    margin: 0px 10px;
+}
+
+.btn-paypal img,
+.btn-transferencia img {
+    margin: 5px;
+    width: 150px;
+    height: 70px;
+}
+
+@media (max-width: 535px) {
+    .btn-paypal,
+    .btn-transferencia {
+        margin: 10px;
+    }
+    .btn-paypal img,
+    .btn-transferencia img {
+        width: 90px;
+        height: 40px;
+    }
+}
+
+.btn-next {
+    margin-top: 10px;
+}
+
+
+/********************** INICIO FOOTER ******************/
+
+.img__footer {
+    width: 200px;
+    border-radius: 100px;
+    background-color: ease;
+}
+
+.btn__footer {
+    text-decoration: none;
+    border: none;
+    transition: 0.5s ease-in-out;
+    margin: 10px !important;
+}
+
+.bg-dark {
+    background-color: #2e2c2c !important;
+}
+
+.btn__footer:hover {
+    box-shadow: 11px 13px 14px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 11px 13px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 11px 13px 14px 0px rgba(0, 0, 0, 0.75);
+    transform: translateY(-10px);
+}
+
+
+/********************** FIN FOOTER ************************/
+
+.logines {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.form-container {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    transform: translate(-50%);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+    width: 380px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #000;
+}
+
+.titulo_blanco {
+    text-transform: uppercase;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.control input {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+}
+
+.control input[type="submit"] {
+    background: rgb(162, 2, 2);
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: .7;
+    transition: opacity .3s ease;
+}
+
+.control [type="button"] {
+    background: rgb(218, 135, 10);
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: .7;
+    transition: opacity .3s ease;
+}
+
+.control input[type="submit"]:hover {
+    opacity: 1;
+}
+
+.control [type="button"]:hover {
+    opacity: 1;
+}
+
+.link {
+    text-align: center;
+}
+
+.control a {
+    text-decoration: none;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+.link a:hover {
+    color: rgb(162, 2, 2);
+}
+
+.sub {
+    color: white;
+}
+
+@media (max-width:985px) {
+    .form-container {
+        position: absolute;
+        top: 3%;
+        left: 48%;
+        transform: translate(-50%);
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+        width: 317px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        box-shadow: 7px 7px 60px #000;
+    }
+    .logines {
+        width: 100%;
+    }
+}
+
+
+/********************** SECTION DE LOGIN CARDS ************************/
+
+.team-section {
+    width: 100%;
+}
+
+.team-section .container_titulo {
+    width: 80%;
+    margin: auto;
+}
+
+.team-section .container_titulo .row {
+    width: 60%;
+    margin: auto;
+}
+
+.team-section .container_titulo .row .title_name {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team-section .container_titulo .row .title_name h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: black;
+}
+
+.team-section .container_titulo .row .title_name p {
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 30px 0px;
+    color: #a3a3a3;
+}
+
+.team-section .container_titulo .team-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.team-section .container_titulo .team-card .card {
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.team-section .container_titulo .team-card .card:hover {
+    background-color: #f3f3f3;
+    transition: 0.3s;
+}
+
+.team-section .container_titulo .team-card .card .image-section img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+}
+
+.team-section .container_titulo .team-card .card .content {
+    width: 100%;
+    text-align: center;
+}
+
+.team-section .container_titulo .team-card .card .content h3 {
+    font-size: 27px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: #000;
+}
+
+.team-section .container_titulo .team-card .card .content h4 {
+    font-size: 17px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: #800b0b;
+}
+
+.team-section .container_titulo .team-card .card .content p {
+    font-size: 15px;
+    margin: 16px 0px;
+    line-height: 1.5;
+    color: #cac9c9;
+}
+
+@media screen and (max-width: 900px) {
+    .team-section .container_titulo .team-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 768) {
+    .team-section .container_titulo .team-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/********************** FIN SECTION LOGIN CARDS ************************/
+
+
+/* ---------------------------------------------------
+    FORGOT
+----------------------------------------------------- */
+
+.titulo__contraseña {
+    text-align: center;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.container_forgot {
+    width: 361px;
+    padding: 20px;
+    margin: auto;
+    background: rgba(234, 235, 236, .5);
+    margin-bottom: 30%;
+}
+
+.container_forgot h2 {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+}
+
+.correo {
+    width: 100%;
+    border: none;
+    background: none;
+    border-bottom: solid rgb(160, 156, 156) 2px;
+    padding: 15px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.correo:focus {
+    border-bottom: solid rgb(255, 7, 7) 2px;
+}
+
+.form__button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.salir {
+    text-decoration: none !important;
+    background: red;
+    padding: 5px 20px;
+    color: white;
+    font-size: 14px;
+}
+
+.salir:hover {
+    background: rgb(162, 2, 2);
+    color: white;
+}
+
+.enviar {
+    background: green;
+    padding: 8px 20px;
+    color: white;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: #054e4e;
+}
+
+
+/********************** INICIO INDEX1 LOGUEANDO ************************/
+
+.navigation_index {
+    width: 100%;
+    height: 90px;
+    background-color: #e9e9e9;
+}
+
+.navigation_index .submenu {
+    float: left;
+}
+
+.navigation_index li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 12px;
+}
+
+.submenu li a {
+    text-decoration: none !important;
+    font-size: 14px;
+    padding: 12px;
+    color: rgb(61, 113, 70);
+}
+
+li {
+    margin-right: 1px;
+}
+
+.submenu li a:hover {
+    color: black
+}
+
+@media (max-width:989px) {
+    .navigation_index {
+        width: 100%;
+    }
+    .submenu li a {
+        font-size: 10px;
+        display: grid;
+        text-align: center;
+    }
+    .navigation_index li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 6px;
+    }
+    .navbar-expand .navbar-nav .dropdown-menu {
+        position: absolute;
+        right: -20px;
+        width: 100px;
+    }
+}
+
+
+/*navvut*/
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(72 123 83 / 91%);
+}
+
+.header-profile .dropdown .dropdown-toggle {
+    color: rgb(72 123 83 / 91%);
+    text-decoration: none !important;
+}
+
+.navbar-expand .navbar-nav .dropdown-menu {
+    position: absolute;
+    right: -20px;
+}
+
+
+/*menu login*/
+
+.dropdown-item-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dropdown-item-menu .imgBox {
+    width: 80px;
+    height: 80px;
+}
+
+.dropdown-item-menu .imgBox img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.dropdown-item-menu .dropdown-content {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.dropdown-item-menu .dropdown-content::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -6px;
+    background: #fff;
+    width: 12px;
+    height: 12px;
+    transform: translate(-50%)rotate(45deg);
+}
+
+.dropdown-item-menu .dropdown-content .content .name {
+    font-weight: 800;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #111;
+}
+
+.dropdown-item-menu .dropdown-content .content .occupation {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.dropdown-item-menu .dropdown-content .links li {
+    list-style: none;
+    line-height: 30px;
+}
+
+.dropdown-item-menu .dropdown-content .links li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-item-menu .dropdown-content .links li a i {
+    display: inline-block;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.dropdown-item-menu .divider {
+    margin: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.dropdown-item-menu .dropdown-toggle {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/**footer ebook*/
+
+.alert-success {
+    display: inline-table;
+    color: #fff;
+    background-color: rgb(9, 74, 76);
+    width: auto;
+    margin-bottom: 0;
+}
+
+.alert-success {
+    color: #f0faf2;
+    background-color: #115820;
+    border-color: #c3e6cb;
+}
+
+.close:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+
+.close {
+    color: #fff;
+    opacity: 1;
+}
+
+.alert {
+    position: relative;
+    padding: 0.75rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-success p {
+    font-size: 14px;
+}
+
+.footer-alert {
+    bottom: 0;
+    display: block ruby;
+    height: auto;
+    left: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 9;
+}
+
+.footer-alert-box {
+    list-style: none;
+    float: left;
+    padding-top: 10px;
+    position: relative;
+    padding-left: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.footer-alert-subtitle,
+.footer-alert-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer-alert-button {
+    background: #c7f913;
+    width: 200px;
+    float: right;
+    margin-top: 10px;
+}
+
+.col-md-12 p {
+    margin: 0;
+    text-align: center;
+}
+
+.footer-alert-button a {
+    color: #251448;
+    text-decoration: none !important;
+}
+
+.btn {
+    font-weight: 700;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+
+.footer-alert-text {
+    font-size: 18px;
+    margin: 12px auto;
+}
+
+.modal-open .modal {
+    overflow-y: hidden !important;
+}
+
+@media (min-width:768px) {
+    .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+/**Perfil menu y de sub navegacion de portafolio */
+
+.mainmenu {
+    display: flex;
+}
+
+.col1 {
+    background-color: #97BD53;
+    height: 80vh;
+    width: 100vw;
+}
+
+#col1-fonts {
+    margin-top: 30px;
+    text-align: center;
+    line-height: 85%;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 44px;
+}
+
+#persona {
+    position: absolute;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 38%;
+    margin-top: 100px;
+}
+
+#perfil {
+    border-radius: 50%;
+    width: 40px;
+    border: 1px solid white;
+    margin-left: -6px;
+}
+
+@media (max-width:890px) {
+    .mainmenu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    #persona {
+        position: absolute;
+        height: 151px;
+        border-radius: 50%;
+        margin-left: 30vw;
+        margin-top: 100px;
+    }
+    .col1 {
+        background-color: #97BD53;
+        height: 80vh;
+        width: 100vw;
+        margin-bottom: 15%;
+    }
+    .profile-user-name {
+        font-size: 10px;
+    }
+    .profile-user-name {
+        margin-top: -29px;
+        margin-left: 37px;
+        font-size: 13px;
+    }
+    .profile-see-profile {
+        font-size: 13px;
+        margin-left: 30%;
+    }
+    .dropdown-item.no-scroll span {
+        font-size: 15px;
+    }
+}
